@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+<div class="main">
+    <div class="weather">
+        <!--获取当前用户所在城市接口：//jirenguapi.applinzi.com/city.php-->
+        <!--服务端支持 CORS 跨域调用，前端可直接使用 ajax 获取数据-->
+        <!--获取某城市对应的天气接口：//jirenguapi.applinzi.com/weather.php?city=北京-->
+        <!--服务端支持 CORS 跨域调用，前端可直接使用 ajax 获取数据, 如果不传递参数默认获取当前用户所在城市的天气-->
+        <div class="weather_top">
+            <div class="location">
+                <i class="iconfont">&#xe625;</i>
+                <p>北京</p>
+            </div>
+        </div>
+        <div class="weather_down">
+            <div class="wd_left">
+                <ul class="weatherNow">
+                </ul>
+            </div>
+            <div class="wd_right">
+                <ul class="futureWeather">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
